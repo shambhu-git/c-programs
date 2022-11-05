@@ -22,7 +22,7 @@ int main(void)
 		printf("write success in test.txt\n");
 	}
 	result = fclose(fp);
-
+	fp = NULL;
 	if(result == EOF)
 	{	
 		printf("file close failed\n");
